@@ -17,7 +17,7 @@ console.log(" ");
 setInterval(grab, 500);
 async function grab() {
   for (const singleticker of tickers) {
-    const res1 = await fetch(`https://diegoveliz.xyz/api/${singleticker}`)
+    const res1 = await fetch(`https://ejemplo.com//${singleticker}`)
     let quote;
     try {quote = await res1.json();} 
     catch (e) {console.log(e);return;};
