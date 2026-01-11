@@ -73,7 +73,7 @@ def plot_and_save_chart(series, current, prev_close):
     
     ax.axhline(0, color='white', linestyle='--', linewidth=0.8, alpha=0.5)
     
-    ax.xaxis.set_major_formatter(mdates.DateFormatter('%H:%M'))
+    ax.set_xticks([])
     plt.xticks(color='gray', fontsize=16)
     plt.yticks(color='gray', fontsize=16)
     
