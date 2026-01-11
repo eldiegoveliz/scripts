@@ -16,7 +16,7 @@ portfolio_positions = {
     "QCLS": 2,
 }
 
-cash = 22.73
+cash = 0.65
 
 def get_portfolio_performance(positions, cash_holdings):
     tickers = list(positions.keys())
@@ -92,9 +92,9 @@ def plot_and_save_chart(series, current, prev_close):
     plt.tight_layout()
     
     nombre_archivo = 'holdings.png'
-    ruta = os.path.join("/home/diego/scripts/grafstoncks/", nombre_archivo)
+    ruta = os.path.join("/home/diego/scripts/grafstoncks/portfolio-tracker", nombre_archivo)
     
-    with open("/home/diego/scripts/grafstoncks/pct.txt", "w") as f:
+    with open("/home/diego/scripts/grafstoncks/portfolio-tracker/pct.txt", "w") as f:
         f.write(f"{change_symbol}{pct_val:,.2f}%\n${current:,.2f}")
     
     plt.savefig(ruta, dpi=300, bbox_inches='tight', transparent=True)
