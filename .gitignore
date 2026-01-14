@@ -2,6 +2,8 @@
 
 *dns_emailwizard
 
+terminal/
+
 :!python3!\ grafs.py"
 
 :silent\ execute

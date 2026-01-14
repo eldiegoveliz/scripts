@@ -7,16 +7,16 @@ import os
 
 portfolio_positions = {
     "SRPT": 7,
-    "GOVZ": 20,
+    "GOVZ": 5,
     "SLNO": 3,
-    "ABVX": 3.1798,
+    "ABVX": 3.9798,
 
 
 
     "QCLS": 2,
 }
 
-cash = 0.65
+cash = 43.03
 
 def get_portfolio_performance(positions, cash_holdings):
     tickers = list(positions.keys())
